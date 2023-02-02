@@ -1,0 +1,21 @@
+<div class="contenidor">
+    <div class="form-login">
+        <mat-spinner *ngIf="carregant" diameter="60" class="progres"></mat-spinner>
+
+        <form *ngIf="!carregant" [formGroup]="formulari" (ngSubmit)="acces()">
+            <img src="./assets/img/login.png" class="ancho">
+            <h1>Inici de sessió</h1>
+            <mat-form-field appearance="fill" class="ancho_inputs">
+                <mat-label>Nom usuari</mat-label>
+                <input matInput autocomplete="off" formControlName="usuari">
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="ancho_inputs">
+                <mat-label>Contrassenya</mat-label>
+                <input matInput autocomplete="off" type="password" formControlName="contra">
+            </mat-form-field>
+            <br>
+            <button type="submit"  mat-raised-button color="primary" [disabled]="formulari.invalid">Accés</button>
+        </form>
+    </div>
+
+</div>

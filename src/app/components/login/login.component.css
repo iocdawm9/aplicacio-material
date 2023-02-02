@@ -1,0 +1,26 @@
+.contenidor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: #bcd2ec;
+    height: 100%;
+  }
+  .form-login {
+    width: 100%;
+    max-width: 20%;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .ancho {
+    width: 20%;
+  }
+  .ancho_inputs {
+    width: 80%;
+  }
+
+  .progres{
+    margin:auto;
+  }
